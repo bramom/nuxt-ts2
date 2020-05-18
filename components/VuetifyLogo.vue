@@ -34,7 +34,6 @@ export default Vue.extend({
       message: 'This is a message'
     }
   },
-
   computed: {
     fullName (): string {
       return `${this.user.firstName} ${this.user.lastName}`
