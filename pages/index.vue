@@ -11,7 +11,7 @@
     >
       <div class="text-center">
         <logo />
-        <vuetify-logo />
+        <vuetify-logo :user="user" />
       </div>
       <v-card>
         <v-card-title class="headline">
@@ -87,6 +87,14 @@ export default {
   components: {
     Logo,
     VuetifyLogo
+  },
+  data () {
+    return {
+      user: {
+        firstName: 'john',
+        lastName: 'doe'
+      }
+    }
   }
 }
 </script>
